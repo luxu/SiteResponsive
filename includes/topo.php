@@ -2,14 +2,12 @@
 ob_start();
 @session_start();
 $usuario = $_SESSION["id"];
-//$nome = $_SESSION["nome"];
 if ($usuario == "") {
     unset($_SESSION["usuario"]);
     unset($_SESSION["senha"]);
     $include = URL . INCLUDES;
     echo '<script>window.location="' . $include . 'login.php"</script>';
 }
-//charset="ISO-8859-2"
 ?>
 <!DOCTYPE HTML>
 <html lang="pt-br">
